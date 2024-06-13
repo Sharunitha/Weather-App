@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url("assets/3.jpeg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 350px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  align-self: center;
+  border: 2px solid #1b1464;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cityInput {
+  flex: 1;
+  height: 30px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  padding: 10px;
+  background-color: rgba(110, 109, 109, 0.1);
+  color: white;
+}
+::placeholder {
+  color: white;
+}
+.search-icon {
+  padding: 10px;
+  height: 30px;
+  cursor: pointer;
+}
+.search-icon img {
+  object-fit: contain;
+  margin-top: 5px;
+}
+.image {
+  text-align: center;
+  height: 150px;
+  margin-top: 10px;
+}
+.image img {
+  width: 160px;
+  height: 160px;
+}
+.temp,
+.location,
+.country {
+  margin-top: 5px;
+  font-size: 35px;
+  color: #333;
+  text-transform: uppercase;
+  text-align: center;
+}
+.temp {
+  font-weight: bold;
+}
+.location {
+  color: #ffbc00;
+  font-weight: bold;
+  font-size: 40px;
+}
+.country {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+.cord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+.cord div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.cord div span {
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+}
+.humidity-percent,
+.wind-percent,
+.cord div span:nth-child(2) {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(14, 14, 14);
+  padding-top: 5px;
+}
+.data-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.element {
+  text-align: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.text {
+  font-size: 15px;
+  color: black;
+  font-weight: 600;
+}
+
+.city-not-found,
+.Loading-message,
+.error-message {
+  margin-top: 10px;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.location-not-found {
+  height: 200px;
+  width: 200px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
